@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="XRSettingSwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneLine.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kyI-vQ-4uO">
+                        <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneLine.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AGu-sD-U9Y" userLabel="Up Line View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izW-le-Fx0" userLabel="Title Label">
+                        <rect key="frame" x="18" y="11" width="38" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2fK-Pf-6au"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmi-AE-9OX">
+                        <rect key="frame" x="258" y="6" width="51" height="31"/>
+                        <connections>
+                            <action selector="switchAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Cvu-hP-M72"/>
+                        </connections>
+                    </switch>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="leG-vu-nMY">
+                        <rect key="frame" x="226" y="7" width="81" height="29"/>
+                        <segments>
+                            <segment title="清晰"/>
+                            <segment title="高清"/>
+                        </segments>
+                        <connections>
+                            <action selector="segmentBtn:" destination="KGk-i7-Jjw" eventType="valueChanged" id="P0u-Pl-JcT"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rmi-AE-9OX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0jq-Eq-k8v"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rmi-AE-9OX" secondAttribute="trailing" constant="5" id="C9z-DS-CtM"/>
+                    <constraint firstItem="izW-le-Fx0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EVo-Xa-kda"/>
+                    <constraint firstItem="leG-vu-nMY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gdJ-n0-JhM"/>
+                    <constraint firstItem="rmi-AE-9OX" firstAttribute="trailing" secondItem="leG-vu-nMY" secondAttribute="trailing" id="kTL-Zg-F9h"/>
+                    <constraint firstItem="izW-le-Fx0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="weW-6T-CM4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_upLineView" destination="AGu-sD-U9Y" id="mIm-lq-aEO"/>
+                <outlet property="segmentBtn" destination="leG-vu-nMY" id="qLq-50-5pc"/>
+                <outlet property="switchBtn" destination="rmi-AE-9OX" id="wbv-cP-ebS"/>
+                <outlet property="titleLabel" destination="izW-le-Fx0" id="fMK-TV-72F"/>
+            </connections>
+            <point key="canvasLocation" x="332" y="277"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="oneLine.jpg" width="287" height="1"/>
+    </resources>
+</document>

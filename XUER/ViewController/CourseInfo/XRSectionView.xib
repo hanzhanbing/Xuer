@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XRSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneLine.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IxK-Wb-qQW">
+                    <rect key="frame" x="0.0" y="45" width="600" height="1"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneLine.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lDD-Fe-FDG">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                </imageView>
+                <button opaque="NO" tag="121" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUe-q3-7Pg">
+                    <rect key="frame" x="107" y="0.0" width="106" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="41Y-ZE-Sov"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="目录">
+                        <color key="titleColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.066666666669999999" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="directoryButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="fA0-QK-Ibm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="122" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk1-Ry-6EY">
+                    <rect key="frame" x="213" y="0.0" width="107" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="W0N-3O-btd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="评价">
+                        <color key="titleColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.066666666666666666" green="0.67450980392156867" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="commentButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="vIe-Fd-lUr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-Aw-ayn">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="1U2-do-gKT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="简介">
+                        <color key="titleColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.066666666669999999" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="introduceButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="yqb-nR-yqt"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0L7-Ii-uK9">
+                    <rect key="frame" x="107" y="44" width="106" height="2"/>
+                    <color key="backgroundColor" red="0.011764705882352941" green="0.6705882352941176" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="aS6-d0-uc1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mk1-Ry-6EY" firstAttribute="width" secondItem="Yhw-Aw-ayn" secondAttribute="width" id="3Mv-Ug-96e"/>
+                <constraint firstItem="Yhw-Aw-ayn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5tN-mU-kZu"/>
+                <constraint firstItem="Yhw-Aw-ayn" firstAttribute="width" secondItem="0L7-Ii-uK9" secondAttribute="width" id="Dy1-tX-Mtu"/>
+                <constraint firstItem="mk1-Ry-6EY" firstAttribute="leading" secondItem="jUe-q3-7Pg" secondAttribute="trailing" id="Pd5-LJ-nkw"/>
+                <constraint firstItem="mk1-Ry-6EY" firstAttribute="width" secondItem="jUe-q3-7Pg" secondAttribute="width" id="QgB-pL-lyv"/>
+                <constraint firstItem="mk1-Ry-6EY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rvo-jZ-Y0u"/>
+                <constraint firstAttribute="trailing" secondItem="mk1-Ry-6EY" secondAttribute="trailing" id="UMe-X7-mfF"/>
+                <constraint firstItem="0L7-Ii-uK9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="Ve1-dg-803"/>
+                <constraint firstItem="jUe-q3-7Pg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hoe-ch-y2P"/>
+                <constraint firstItem="Yhw-Aw-ayn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kdi-Gm-BUs"/>
+                <constraint firstItem="jUe-q3-7Pg" firstAttribute="leading" secondItem="Yhw-Aw-ayn" secondAttribute="trailing" id="p5K-fo-nXH"/>
+                <constraint firstItem="jUe-q3-7Pg" firstAttribute="centerX" secondItem="0L7-Ii-uK9" secondAttribute="centerX" id="pbP-Fc-NjB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_directoryButton" destination="jUe-q3-7Pg" id="IHs-uQ-MCD"/>
+                <outlet property="_evaluateButton" destination="mk1-Ry-6EY" id="HVC-fP-lPv"/>
+                <outlet property="_introduceButton" destination="Yhw-Aw-ayn" id="EM0-Zp-3BT"/>
+                <outlet property="_lineView" destination="0L7-Ii-uK9" id="Crc-nG-UzT"/>
+            </connections>
+            <point key="canvasLocation" x="212" y="-16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="oneLine.jpg" width="287" height="1"/>
+    </resources>
+</document>

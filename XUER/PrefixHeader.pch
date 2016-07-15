@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  XUER
+//
+//  Created by 韩占禀 on 15/8/21.
+//  Copyright (c) 2015年 韩占禀. All rights reserved.
+//
+
+#ifndef XUER_PrefixHeader_pch
+#define XUER_PrefixHeader_pch
+
+//将头文件导入到这里，将会成为全局头文件，在使用的地方无需导入头文件即可使用
+#import "UIView+Frame.h"
+#import "UIView+HB.h"
+#import "Const.h"
+#import "UIViewController+Add.h"
+#import "XRNetCenter.h"
+#import "XRConfigs.h"
+#import "MBProgressHUD.h"
+#import "UIImage+Additions.h"
+#import "UIImage+HB.h"
+#import "XRFilePath.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "UIImage+MultiFormat.h"
+#import "NSDate+Additions.h"
+#import "MJExtension.h"
+#import "XRInfo.h"
+#import "FSVideoDownloadCenter.h"
+#import "XRStarView.h"
+#import "FSCodeLayout.h"
+#import "UIView+Add.h"
+
+#ifdef XURE_Debug_Mode
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define NSLog(...) {}
+#endif
+
+#endif

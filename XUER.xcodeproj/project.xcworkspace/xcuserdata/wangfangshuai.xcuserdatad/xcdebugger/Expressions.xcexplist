@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__37-[XRCourseInfoController viewDidLoad]_block_invoke:XRCourseInfoController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_courseInfo.mycomment">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__29-[XRBannerView bannerSwitch:]_block_invoke:XRBannerView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(_bannerArr.count-1)*kScreenWidth">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

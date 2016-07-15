@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="192" id="KGk-i7-Jjw" customClass="XRDescriptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y07-HQ-Nkh">
+                        <rect key="frame" x="13" y="8" width="294" height="175"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <string key="text">学啊教育金牌导师,10年以上IT领域工作经验。在软件开发和职业教育领域都拥有丰富的从业经验。曾先后在北大青鸟、安博教育、达内科技教育集团从事一线教学和教学管理工作。 在iOS领域，是国内最早接触iOS开发和从事iOS教学的工程师，一直致力于苹果应用软件及驱动的开发研究，有丰富的企业级iOS项目研发经验。精通C、C++、JAVA、Cocos2d-x游戏引擎，在培养高校毕业生创业就业方面积累了丰富经验。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_introduceLabel" destination="y07-HQ-Nkh" id="6hO-Zk-ZW9"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="264"/>
+        </tableViewCell>
+    </objects>
+</document>
